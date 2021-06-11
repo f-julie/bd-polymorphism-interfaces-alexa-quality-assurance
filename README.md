@@ -13,7 +13,7 @@ provides the position of the device to be selected for testing.
 
 The current implementation of the logic tests each device that is being
 produced. Open the `AlexaInspectionDeviceSelector` class in the
-`src/com/amazon/ata/interfaces/classroom/device/alexa/quality` package,
+`src/com/amazon/ata/interfaces/devices/alexa/quality` package,
 and review the code.
 
 ### Rethinking our sampling logic
@@ -72,7 +72,7 @@ create new classes that implement `Incrementable`:
 
 Let's translate our new design from words and ideas to a UML diagram.
 Open the file `Activity_CD.plantuml` in the
-`src/com/amazon/ata/interfaces/classroom/device/alexa/quality` and work
+`src/com/amazon/ata/interfaces/devices/alexa/quality` and work
 with your group to define the new types and relationships. You should
 each have an updated diagram at the end of this. We will include it in
 our commit at the end of the activity.
@@ -97,7 +97,7 @@ What behavior do we need a class to define to be incrementable?
 
 These should be the two methods we define in our new interface. Create
 an interface called `Incrementable` in the
-`src/com/amazon/ata/interfaces/classroom/increment` package. We will
+`src/com/amazon/ata/interfaces/increment` package. We will
 review the interface definition as a class.
 
 **Doneness:** You are done with this step when:

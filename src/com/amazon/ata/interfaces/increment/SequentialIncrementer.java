@@ -1,4 +1,4 @@
-package com.amazon.ata.interfaces.classroom.increment;
+package com.amazon.ata.interfaces.increment;
 
 /**
  * Stores an integer value that can be incremented by one each time

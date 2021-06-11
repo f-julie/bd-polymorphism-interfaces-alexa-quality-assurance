@@ -1,6 +1,6 @@
-package com.amazon.ata.interfaces.classroom.devices.alexa.quality;
+package com.amazon.ata.interfaces.devices.alexa.quality;
 
-import com.amazon.ata.interfaces.classroom.increment.SequentialIncrementer;
+import com.amazon.ata.interfaces.increment.SequentialIncrementer;
 
 import org.junit.jupiter.api.Test;
 

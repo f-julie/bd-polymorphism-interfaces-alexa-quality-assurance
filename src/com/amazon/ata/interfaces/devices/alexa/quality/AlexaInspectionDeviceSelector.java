@@ -1,6 +1,6 @@
-package com.amazon.ata.interfaces.classroom.devices.alexa.quality;
+package com.amazon.ata.interfaces.devices.alexa.quality;
 
-import com.amazon.ata.interfaces.classroom.increment.SequentialIncrementer;
+import com.amazon.ata.interfaces.increment.SequentialIncrementer;
 
 /**
  * Logic to select an Amazon device for inspection. The logic will select every nth device to be inspected
