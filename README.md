@@ -1,8 +1,6 @@
 ## Alexa Quality Assurance
 
-**Branch name:** interfaces-classroom
-
-**RDE workflow:** interfaces-alexa-qa
+**GitHub repo:** [ebd-polymorphism-interfaces-alexa-quality-assurance](https://github.com/LambdaSchool/ebd-polymorphism-interfaces-alexa-quality-assurance)
 
 When Amazon devices are manufactured, we need to ensure that our
 customers are receiving a high quality product. We do this by selecting
@@ -211,4 +209,4 @@ a seed value with your `Random` object.
    diagram updates!
 1. Push it to your remote branch.
 1. Go back to the Alexa Quality Assurance Canvas page and paste in a
-   link to your commit on Code Browser.
+   link to your commit.
