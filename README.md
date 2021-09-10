@@ -1,6 +1,8 @@
-## Alexa Quality Assurance
+# Alexa Quality Assurance
 
 **GitHub repo:** [ebd-polymorphism-interfaces-alexa-quality-assurance](https://github.com/LambdaSchool/ebd-polymorphism-interfaces-alexa-quality-assurance)
+
+## Background
 
 When Amazon devices are manufactured, we need to ensure that our
 customers are receiving a high quality product. We do this by selecting
@@ -14,7 +16,7 @@ produced. Open the `AlexaInspectionDeviceSelector` class in the
 `src/com/amazon/ata/interfaces/devices/alexa/quality` package,
 and review the code.
 
-### Rethinking our sampling logic
+## Rethinking our sampling logic
 We have decided that while it was very helpful to test each and every
 device thoroughly in our early stages of production, we have improved
 our processes and the quality has significantly increased. We want to
@@ -36,9 +38,7 @@ When your group has an approach that you think makes sense, or after we
 discuss approaches as a class, go ahead and continue with the
 reading/activity.
 
-
-
-### Refactoring our sampling logic
+## Refactoring our sampling logic
 
 Our goal is to update `AlexaInspectionDeviceSelector` so that its
 incrementer logic can easily be swapped in or out. We will do this by
@@ -66,7 +66,7 @@ create new classes that implement `Incrementable`:
 1. `RandomSequentialIncrementer`, increments value by a random positive
     amount, where the maximum random amount is defined by the user
 
-#### Diagramming our new design
+## Diagramming our new design
 
 Let's translate our new design from words and ideas to a UML diagram.
 Open the file `Activity_CD.plantuml` in the
@@ -83,7 +83,7 @@ our commit at the end of the activity.
   - depicts the "implements" relationship between these classes and
     the `Incrementable` interface
 
-#### Create our new interface, `Incrementable`
+## Create our new interface, `Incrementable`
 
 Create the `Incrementable` interface in the
 `com.amazon.ata.interfaces.increment` Java package
@@ -104,7 +104,7 @@ review the interface definition as a class.
 - The interface includes a method for retrieving the current value (without
   incrementing)
 
-#### Update our existing `SequentialIncrementer` to implement `Incrementable`
+## Update our existing `SequentialIncrementer` to implement `Incrementable`
 
 Let's update our current incrementer class, `SequentialIncrementer`, to
 implement our new interface. Make sure to update the class header and
@@ -114,7 +114,7 @@ to override the required methods. IntelliJ should help you out here!
 - Your `SequentialIncrementer` implements `Incrementable` and everything
   compiles
 
-#### Refactor `AlexaInspectionDeviceSelector` to use an `Incrementable`
+## Refactor `AlexaInspectionDeviceSelector` to use an `Incrementable`
 
 Now that we have an implementation of `Incrementable`, let's update our
 `AlexaInspectionDeviceSelector` class to instead of depending on
@@ -146,7 +146,7 @@ behold your newly redesigned, flexible `AlexaInspectionDeviceSelector`!
   calls to the `SequentialIncrementer` constructor in the unit tests.
 - The tests compile and pass
 
-#### COMPLETION: Create `FixedIncrementer`
+## COMPLETION: Create `FixedIncrementer`
 
 Create the `FixedIncrementer` class in the
 `com.amazon.ata.interfaces.increment` Java package
@@ -176,7 +176,7 @@ If you would like to do the extension at this time, complete the next
 step. If you aren't going to tackle the extension at this time, jump
 down to "Commit & Push"
 
-#### EXTENSION: Create `RandomSequentialIncrementer`
+## Extension: Create `RandomSequentialIncrementer`
 
 Create the `RandomSequentialIncrementer` class in the
 `com.amazon.ata.interfaces.increment` Java package
@@ -202,7 +202,7 @@ a seed value with your `Random` object.
 `AlexaInspectionDeviceSelector` that use a `RandomSequentialIncrementer`
 - All tests pass
 
-### Commit & Push
+## Commit & Push
 
 1. When you have the code to where you want it (at least compiling,
    ideally all tests passing), commit it. Make sure to include your UML
