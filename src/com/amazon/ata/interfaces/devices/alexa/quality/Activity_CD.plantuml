@@ -1,0 +1,12 @@
+@startuml
+
+class AlexaInspectionSelector {
+  +getSampleDevicePosition() : int
+}
+class SequentialIncrementer {
+  +increment() : int
+  +getValue() : int
+}
+
+AlexaInspectionSelector  o-- SequentialIncrementer
+@enduml
