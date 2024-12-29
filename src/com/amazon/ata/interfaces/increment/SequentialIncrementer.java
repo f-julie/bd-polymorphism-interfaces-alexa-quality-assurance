@@ -5,7 +5,7 @@ package com.amazon.ata.interfaces.increment;
  * {@code increment()} is called. The value can be retrieved at any
  * time by calling {@code getValue()}.
  */
-public class SequentialIncrementer {
+public class SequentialIncrementer implements Incrementable {
 
     private int value;
 
@@ -31,6 +31,7 @@ public class SequentialIncrementer {
      * Increments the integer value by one.
      * @return The new integer value after incrementing.
      */
+    @Override
     public int increment() {
         this.value += 1;
         return getValue();

@@ -1,5 +1,6 @@
 package com.amazon.ata.interfaces.devices.alexa.quality;
 
+import com.amazon.ata.interfaces.increment.Incrementable;
 import com.amazon.ata.interfaces.increment.SequentialIncrementer;
 
 /**
@@ -8,14 +9,14 @@ import com.amazon.ata.interfaces.increment.SequentialIncrementer;
  */
 public class AlexaInspectionDeviceSelector {
 
-    private final SequentialIncrementer incrementer;
+    private final Incrementable incrementer;
 
     /**
      * Instantiates a new Alexa inspection device selector with the given incrementer.
      *
      * @param incrementer the incrementer
      */
-    public AlexaInspectionDeviceSelector(SequentialIncrementer incrementer) {
+    public AlexaInspectionDeviceSelector(Incrementable incrementer) {
         this.incrementer = incrementer;
     }
 
